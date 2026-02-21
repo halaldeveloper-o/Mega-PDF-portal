@@ -3,181 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="বিশ্বের সেরা সব ফ্রি পিডিএফ এবং ই-বুক ডাউনলোডের ওয়েবসাইটের মেগা পোর্টাল। বাংলা সাহিত্য, ইসলামিক বই, একাডেমিক, এবং প্রোগ্রামিং বইয়ের এক বিশাল সংগ্রহ।">
-    <meta name="keywords" content="ফ্রি পিডিএফ, বাংলা বই পিডিএফ, ইসলামিক বই ডাউনলোড, free pdf books, download bangla pdf, islamic books pdf, free ebooks, epub download">
-    <meta name="author" content="Book Portal">
-    <meta name="robots" content="index, follow">
     
-    <title>মেগা পিডিএফ বুক পোর্টাল - বিশ্বের সেরা ই-বুক সংগ্রহশালা</title>
+    <title>মেগা পিডিএফ পোর্টাল - ইসলামিক তথ্য ওয়ার্ল্ড | ৯৯+ ফ্রি বইয়ের সাইট</title>
+    <meta name="description" content="ইসলামিক তথ্য ওয়ার্ল্ড-এর একটি বিশেষ আয়োজন। এখানে ৯৯টিরও বেশি ভেরিফাইড ফ্রি পিডিএফ ডাউনলোড সাইট রয়েছে।">
     
     <style>
-        :root {
-            --primary: #1e3a8a;
-            --secondary: #059669;
-            --bg: #f8fafc;
-            --text: #1e293b;
+        :root { --primary: #1e3a8a; --secondary: #059669; --bg: #f3f4f6; --white: #ffffff; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg); color: #1e293b; line-height: 1.6; }
+        
+        header { 
+            background: linear-gradient(135deg, var(--primary), #3b82f6); 
+            color: white; padding: 60px 20px; text-align: center; 
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
         }
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Arial, sans-serif; }
-        body { background-color: var(--bg); color: var(--text); }
+        header h1 { font-size: 2.5rem; margin-bottom: 15px; }
+        header .sub-text { font-size: 1.1rem; max-width: 800px; margin: 0 auto; opacity: 0.9; }
+
+        .portal-stats { 
+            max-width: 1000px; margin: -40px auto 40px; background: var(--white); 
+            display: flex; justify-content: space-around; padding: 25px; 
+            border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+        }
+        .stat-box { text-align: center; flex: 1; border-right: 1px solid #eee; }
+        .stat-box:last-child { border-right: none; }
+        .stat-box h2 { color: var(--secondary); font-size: 2rem; }
+        .stat-box p { font-size: 0.85rem; font-weight: bold; color: #64748b; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .cat-header { 
+            background: var(--white); padding: 15px 20px; border-radius: 10px; 
+            border-left: 6px solid var(--secondary); margin: 40px 0 20px; 
+            font-size: 1.4rem; color: var(--primary); box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+        }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+        .card { 
+            background: var(--white); border-radius: 12px; padding: 20px; text-align: center; 
+            border: 1px solid #e2e8f0; transition: 0.3s; display: flex; 
+            flex-direction: column; height: 100%; 
+        }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); border-color: var(--secondary); }
+        .site-icon { width: 50px; height: 50px; margin: 0 auto 15px; border-radius: 50%; background: #f8fafc; }
+        .card h3 { color: var(--primary); margin-bottom: 10px; font-size: 1.1rem; }
+        .card p { font-size: 0.85rem; color: #64748b; margin-bottom: 15px; flex-grow: 1; }
+        .visit-btn { 
+            background: var(--secondary); color: white; text-decoration: none; 
+            padding: 10px; border-radius: 6px; font-weight: bold; font-size: 0.9rem; transition: 0.3s; 
+        }
+        .visit-btn:hover { background: #047857; }
+
+        footer { background: #0f172a; color: white; text-align: center; padding: 50px 20px; margin-top: 60px; }
+        footer a { color: #3b82f6; text-decoration: none; font-weight: bold; }
         
-        header { background: linear-gradient(135deg, var(--primary), #3b82f6); color: white; text-align: center; padding: 4rem 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        header h1 { font-size: 2.8rem; margin-bottom: 15px; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
-        header p { font-size: 1.2rem; opacity: 0.9; max-width: 800px; margin: 0 auto; }
-
-        .container { max-width: 1250px; margin: 0 auto; padding: 20px; }
-        
-        .disclaimer-box { background: #fee2e2; border-left: 5px solid #ef4444; padding: 15px; margin: 30px 0; border-radius: 4px; color: #991b1b; font-size: 0.95rem; line-height: 1.6; }
-
-        .category-section { margin-top: 50px; }
-        .category-title { background: white; color: var(--primary); padding: 15px 20px; border-radius: 8px; margin-bottom: 25px; border-left: 6px solid var(--secondary); box-shadow: 0 2px 5px rgba(0,0,0,0.05); font-size: 1.5rem; }
-
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 25px; }
-
-        .card { background: white; border-radius: 12px; padding: 25px 20px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #e2e8f0; }
-        .card:hover { transform: translateY(-8px); box-shadow: 0 15px 25px rgba(0,0,0,0.1); border-color: var(--secondary); }
-        
-        .site-icon { width: 70px; height: 70px; margin: 0 auto 15px auto; border-radius: 50%; object-fit: contain; background: #f8fafc; padding: 8px; border: 1px solid #e2e8f0; }
-        .card h3 { color: var(--primary); margin-bottom: 12px; font-size: 1.3rem; }
-        .card p { color: #475569; font-size: 0.95rem; margin-bottom: 25px; flex-grow: 1; line-height: 1.5; }
-        
-        .visit-btn { background: var(--secondary); color: white; text-decoration: none; padding: 12px 20px; border-radius: 6px; font-weight: bold; transition: background 0.3s, transform 0.2s; display: inline-block; }
-        .visit-btn:hover { background: #047857; transform: scale(1.05); }
-
-        footer { background: #0f172a; color: white; text-align: center; padding: 3rem; margin-top: 60px; }
-        footer a { color: #38bdf8; text-decoration: none; }
+        @media (max-width: 768px) {
+            .portal-stats { flex-direction: column; gap: 15px; margin-top: -20px; }
+            .stat-box { border-right: none; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>মেগা পিডিএফ বুক পোর্টাল</h1>
-    <p>বাংলা সাহিত্য, ইসলামিক জ্ঞান, বিজ্ঞান, প্রোগ্রামিং এবং আন্তর্জাতিক ক্ল্যাসিক বইয়ের বিশ্বের সর্ববৃহৎ ফ্রি ডিরেক্টরি। আপনার পছন্দের বইটি খুঁজে নিন খুব সহজেই।</p>
+    <h1>মেগা পিডিএফ পোর্টাল</h1>
+    <div class="sub-text">
+        <p><strong>ইসলামিক তথ্য ওয়ার্ল্ড</strong>-এর বিশেষ আয়োজন। জ্ঞান অন্বেষণকারীদের জন্য এখানে ৯৯টিরও বেশি ভেরিফাইড এবং কার্যকরী লিংক রয়েছে। আমাদের লক্ষ্য হলো আপনাকে সঠিক তথ্যের উৎসের সাথে পরিচয় করিয়ে দেওয়া।</p>
+    </div>
 </header>
 
 <div class="container">
-    <div class="disclaimer-box">
-        <strong>⚠️ ডিসক্লেইমার (Disclaimer):</strong> এই পোর্টালে যুক্ত করা কোনো ওয়েবসাইট বা পিডিএফ ফাইল আমাদের নিজস্ব সার্ভারে হোস্ট করা নেই। আমরা শুধুমাত্র পাবলিক ডোমেইনে থাকা শিক্ষামূলক, তথ্যভিত্তিক এবং ফ্রি ই-বুক ওয়েবসাইটের লিংকগুলো ব্যবহারকারীদের সুবিধার্থে ক্যাটাগরি অনুযায়ী একত্রে সাজিয়েছি। কোনো বইয়ের কপিরাইট সমস্যা থাকলে সংশ্লিষ্ট ওয়েবসাইটের সাথে যোগাযোগ করার অনুরোধ করা হলো।
+    <div class="portal-stats">
+        <div class="stat-box"><h2>৯৯+</h2><p>টোটাল সাইট</p></div>
+        <div class="stat-box"><h2>১০০%</h2><p>ফ্রি এক্সেস</p></div>
+        <div class="stat-box"><h2>আপডেট</h2><p id="currentYearStat"></p></div>
     </div>
-
-    <div id="portal-content">
-        </div>
+    <div id="portal-body"></div>
 </div>
 
 <footer>
-    <p>&copy; 2026 মেগা পিডিএফ পোর্টাল। সর্বস্বত্ব সংরক্ষিত।</p>
-    <p style="margin-top: 10px; font-size: 0.9rem; color: #94a3b8;">সবার মাঝে জ্ঞান ছড়িয়ে দেওয়ার একটি ক্ষুদ্র প্রয়াস।</p>
+    <p>&copy; <span id="year"></span> মেগা পিডিএফ পোর্টাল | সর্বস্বত্ব সংরক্ষিত</p>
+    <p style="margin-top: 10px;">একটি <a href="https://islamictotthoworld.blogspot.com" target="_blank">ইসলামিক তথ্য ওয়ার্ল্ড</a>-এর বিশেষ উদ্যোগ</p>
 </footer>
 
 <script>
-    // বিশাল ডেটাবেস (প্রায় ১০০টি সেরা সাইট)
-    const sitesData = [
-        // ক্যাটাগরি ১: বাংলা সাহিত্য ও ধ্রুপদী বই
-        { name: "eBangla Library", url: "https://www.ebanglalibrary.com", desc: "বাংলা সাহিত্যের বিশাল ভাণ্ডার, ধ্রুপদী লেখকদের বইয়ের জন্য সেরা।", category: "১. বাংলা সাহিত্য ও সাধারণ বই" },
-        { name: "BDeBooks", url: "https://bdebooks.com", desc: "সমসাময়িক এবং জনপ্রিয় বাংলা গল্পের বই ও উপন্যাস ডাউনলোড সাইট।", category: "১. বাংলা সাহিত্য ও সাধারণ বই" },
-        { name: "Amar Books", url: "https://www.amarbooks.org", desc: "পুরনো এবং দুর্লভ বাংলা বইয়ের অসাধারণ একটি সংগ্রহশালা।", category: "১. বাংলা সাহিত্য ও সাধারণ বই" },
-        { name: "Rabindranath.in", url: "https://rabindranath.in", desc: "রবীন্দ্রনাথ ঠাকুরের যাবতীয় লেখা এক জায়গায় পাওয়ার বিশ্বস্ত ওয়েবসাইট।", category: "১. বাংলা সাহিত্য ও সাধারণ বই" },
-        { name: "Boi Poka", url: "https://boipoka.com", desc: "বইপোকাদের জন্য চমৎকার সব বাংলা বইয়ের পিডিএফ সংগ্রহ।", category: "১. বাংলা সাহিত্য ও সাধারণ বই" },
-        { name: "Bangla Book", url: "https://banglabook.org", desc: "হুমায়ূন আহমেদ থেকে শুরু করে সব জনপ্রিয় লেখকের বই।", category: "১. বাংলা সাহিত্য ও সাধারণ বই" },
-        { name: "All Bangla Books", url: "https://allbanglabooks.com", desc: "সব ধরনের বাংলা পিডিএফ বইয়ের বিশাল লাইব্রেরি।", category: "১. বাংলা সাহিত্য ও সাধারণ বই" },
-        { name: "Free PDF House", url: "https://www.freepdfhouse.com", desc: "নানা ধরনের বাংলা গল্প, উপন্যাস এবং ম্যাগাজিনের কালেকশন।", category: "১. বাংলা সাহিত্য ও সাধারণ বই" },
-        { name: "Granthagar", url: "https://granthagar.com", desc: "বাংলা সাহিত্যের পুরনো ও দুর্লভ বইয়ের অনলাইন আর্কাইভ।", category: "১. বাংলা সাহিত্য ও সাধারণ বই" },
+    // অটোমেটিক বছর আপডেট করার ফাংশন
+    const d = new Date();
+    let year = d.getFullYear();
+    document.getElementById("year").innerHTML = year;
+    document.getElementById("currentYearStat").innerHTML = year + " ভার্সন";
 
-        // ক্যাটাগরি ২: ইসলামিক বই ও গবেষণা
-        { name: "Islamic Boi Somahar", url: "https://www.islamicboisomahar.in", desc: "ইসলামিক মাসলা-মাসায়েল ও গবেষণামূলক বইয়ের সাইট।", category: "২. ইসলামিক ও ধর্মীয় বই" },
-        { name: "Al-Qurans", url: "https://www.alqurans.com", desc: "কুরআন এবং এর তাফসির ভিত্তিক বইয়ের নির্ভরযোগ্য সংগ্রহ।", category: "২. ইসলামিক ও ধর্মীয় বই" },
-        { name: "Al-Modina", url: "https://almodina.com/site_2.html", desc: "বিভিন্ন ইসলামিক কিতাব, প্রবন্ধ বা বইয়ের আর্কাইভ।", category: "২. ইসলামিক ও ধর্মীয় বই" },
-        { name: "Way to Jannah", url: "https://waytojannah.com", desc: "সহীহ আকিদা ও আমল ভিত্তিক বইয়ের নির্ভরযোগ্য পিডিএফ সাইট।", category: "২. ইসলামিক ও ধর্মীয় বই" },
-        { name: "Kalamullah", url: "https://www.kalamullah.com", desc: "ইংরেজি ভাষায় ইসলামিক জ্ঞানার্জনের জন্য বিশ্বের অন্যতম বড় সাইট।", category: "২. ইসলামিক ও ধর্মীয় বই" },
-        { name: "QuranerAlo", url: "https://quraneralo.com", desc: "কুরআনের আলো ছড়াতে চমৎকার সব ইসলামিক আর্টিকেল ও বই।", category: "২. ইসলামিক ও ধর্মীয় বই" },
-        { name: "IslamHouse", url: "https://islamhouse.com/bn/main", desc: "বহু ভাষায় ইসলামিক বই ও অডিওর সবচেয়ে বড় আর্কাইভ।", category: "২. ইসলামিক ও ধর্মীয় বই" },
-        { name: "AhleHaqq", url: "https://www.ahlehaqmedia.com", desc: "ইসলামিক ফতোয়া এবং দ্বীনি বইয়ের বিশাল সমাহার।", category: "২. ইসলামিক ও ধর্মীয় বই" },
-        { name: "Wajibad", url: "https://wajibad.com", desc: "বাংলা ভাষায় ইসলামিক পিডিএফ বইয়ের আরেকটি সমৃদ্ধ সাইট।", category: "২. ইসলামিক ও ধর্মীয় বই" },
+    const sites = [
+        // ১. ইসলামিক ও ধর্মীয় গবেষণা (২৫টি)
+        { name: "Quraner Alo", url: "https://www.quraneralo.com", desc: "কুরআন ও সুন্নাহর বিশাল আর্কাইভ।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
+        { name: "Hadith BD", url: "https://hadithbd.com", desc: "সব হাদিস কিতাব অনলাইনে পড়ার সেরা সাইট।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
+        { name: "IslamHouse", url: "https://islamhouse.com/bn", desc: "বিশ্বের বৃহত্তম বহুভাষিক ইসলামিক লাইব্রেরি।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
+        { name: "Al-Modina", url: "https://almodina.com", desc: "হাজার হাজার ইসলামিক পিডিএফ বইয়ের সংগ্রহ।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
+        { name: "Way to Jannah", url: "https://waytojannah.com", desc: "বিশুদ্ধ আকিদা ও আমলের বই।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
+        { name: "Kalamullah", url: "https://www.kalamullah.com", desc: "ইংরেজি ভাষায় ইসলামিক বইয়ের বড় উৎস।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
+        { name: "AhleHaqq", url: "https://www.ahlehaqmedia.com", desc: "দেওবন্দী ওলামাদের কিতাব ও ফতোয়া।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
+        { name: "Wajibad", url: "https://wajibad.com", desc: "ইসলামিক বই ও মাসআলা-মাসায়েল।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
+        { name: "E-Islam", url: "https://e-islam.net", desc: "বাংলা ইসলামিক ই-বুকের নির্ভরযোগ্য পোর্টাল।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
+        { name: "Fatwa Library", url: "https://fatwalibrary.com", desc: "প্রয়োজনীয় ফতোয়া ও রেফারেন্স কিতাব।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
+        { name: "Sunni Library", url: "https://sunnilibrary.com", desc: "সুন্নি আকিদা ও চিন্তাধারার বই।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
+        { name: "Islamic Bookshelf", url: "https://islamicbookshelf.com", desc: "ডিজিটাল ইসলামিক বুকশেলফ।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
+        { name: "Quranic Thoughts", url: "https://quranicthoughts.com", desc: "কুরআনিক গবেষণার আন্তর্জাতিক সাইট।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
+        { name: "Dawah Books", url: "https://dawahbooks.com", desc: "দাওয়াহ ও তাবলীগী পিডিএফ কালেকশন।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
+        { name: "Sirat.net", url: "https://siraat.net", desc: "সীরাতুন্নবী (সা.) ও সাহাবী জীবনী।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
+        { name: "Madina Library", url: "https://madinalibrary.org", desc: "মদিনা থেকে প্রকাশিত কিতাবসমূহ।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
+        { name: "Islamic Academy", url: "https://islamicacademy.org", desc: "মৌলিক ইসলামিক শিক্ষা ও কিতাব।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
+        { name: "Dua & Ruqyah", url: "https://duas.org", desc: "দোয়া ও রুকইয়াহ ভিত্তিক বই।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
+        { name: "IOU Books", url: "https://iou.edu.gm", desc: "ইসলামিক শিক্ষার একাডেমিক বই।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
+        { name: "Azhar Archive", url: "http://www.azhar.eg", desc: "আল-আযহারের গবেষণা ও প্রকাশনা।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
+        { name: "IRF Net", url: "https://irf.net", desc: "তুলনামূলক ধর্মতত্ত্বের বই।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
+        { name: "Bayan ul Quran", url: "https://bayan-ul-quran.com", desc: "তাফসির ও গভীর কুরআনিক জ্ঞান।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
+        { name: "Maktaba Shamila", url: "https://shamela.ws", desc: "আরবী কিতাব আর্কাইভ (গবেষকদের জন্য)।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
+        { name: "Islamic Relief", url: "https://www.islamic-relief.org", desc: "ইসলামিক জীবনদর্শন ও সেবামূলক বই।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
+        { name: "Halal Foundation", url: "https://halalfoundation.org", desc: "হালাল-হারাম ও ইসলামিক অর্থনীতি।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
 
-        // ক্যাটাগরি ৩: আন্তর্জাতিক ও গ্লোবাল লাইব্রেরি
-        { name: "Project Gutenberg", url: "https://www.gutenberg.org", desc: "৭০,০০০-এর বেশি ফ্রি ক্লাসিক ই-বুকের বিশ্ববিখ্যাত লাইব্রেরি।", category: "৩. আন্তর্জাতিক ই-বুক ও ক্লাসিকস" },
-        { name: "PDF Drive", url: "https://pdfdrive.webs.nf", desc: "কোটি কোটি পিডিএফ ফাইল সার্চ এবং ডাউনলোড করার সেরা মাধ্যম।", category: "৩. আন্তর্জাতিক ই-বুক ও ক্লাসিকস" },
-        { name: "Internet Archive", url: "https://archive.org", desc: "লক্ষ লক্ষ ফ্রি বই এবং ঐতিহাসিক দলিলের উন্মুক্ত লাইব্রেরি।", category: "৩. আন্তর্জাতিক ই-বুক ও ক্লাসিকস" },
-        { name: "ManyBooks", url: "https://manybooks.net", desc: "আধুনিক লেআউটে ৫০ হাজারের বেশি ফ্রি ডিজিটাল বই ডাউনলোড করুন।", category: "৩. আন্তর্জাতিক ই-বুক ও ক্লাসিকস" },
-        { name: "Open Library", url: "https://openlibrary.org", desc: "ইন্টারনেট আর্কাইভের একটি প্রজেক্ট, যেখানে বই ধারও নেওয়া যায়।", category: "৩. আন্তর্জাতিক ই-বুক ও ক্লাসিকস" },
-        { name: "Smashwords", url: "https://www.smashwords.com", desc: "ইন্ডিয়া লেখকদের হাজার হাজার ফ্রি বইয়ের কালেকশন।", category: "৩. আন্তর্জাতিক ই-বুক ও ক্লাসিকস" },
-        { name: "BookBub", url: "https://www.bookbub.com/ebook-deals/free-ebooks", desc: "সীমিত সময়ের জন্য ফ্রি হওয়া বেস্টসেলার বইগুলোর খোঁজ।", category: "৩. আন্তর্জাতিক ই-বুক ও ক্লাসিকস" },
-        { name: "Feedbooks", url: "https://www.feedbooks.com", desc: "পাবলিক ডোমেইন বইগুলো মোবাইল রিডার ফ্রেন্ডলি করে দেওয়া হয়।", category: "৩. আন্তর্জাতিক ই-বুক ও ক্লাসিকস" },
-        { name: "Standard Ebooks", url: "https://standardebooks.org", desc: "পাবলিক ডোমেইনের বইগুলোকে সুন্দর টাইপোগ্রাফিতে সাজানো সাইট।", category: "৩. আন্তর্জাতিক ই-বুক ও ক্লাসিকস" },
-        { name: "Planet eBook", url: "https://www.planetebook.com", desc: "ক্লাসিক সাহিত্যের ফ্রি এবং হাই-কোয়ালিটি ই-বুক।", category: "৩. আন্তর্জাতিক ই-বুক ও ক্লাসিকস" },
-        { name: "Free-eBooks.net", url: "https://www.free-ebooks.net", desc: "নতুন এবং স্বাধীন লেখকদের চমৎকার সব বই।", category: "৩. আন্তর্জাতিক ই-বুক ও ক্লাসিকস" },
+        // ২. বাংলা সাহিত্য (২০টি)
+        { name: "eBangla Library", url: "https://www.ebanglalibrary.com", desc: "বাংলা সাহিত্যের বৃহত্তম অনলাইন আর্কাইভ।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
+        { name: "BDeBooks", url: "https://bdebooks.com", desc: "সব জনপ্রিয় বাংলা লেখকের বই।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
+        { name: "Amar Books", url: "https://www.amarbooks.org", desc: "দুষ্প্রাপ্য ও পুরনো বাংলা বই।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
+        { name: "Bengali PDF", url: "https://www.bengalipdf.com", desc: "সহজে বই ডাউনলোডের মাধ্যম।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
+        { name: "Rabindranath.in", url: "https://rabindranath.in", desc: "রবীন্দ্রনাথের পূর্ণাঙ্গ রচনাবলী।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
+        { name: "Boi Poka", url: "https://boipoka.com", desc: "বইপোকাদের পছন্দের বাংলা ই-বুক।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
+        { name: "Bangla Book", url: "https://banglabook.org", desc: "সেরা সব ঔপন্যাসিকের বই।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
+        { name: "Free PDF House", url: "https://www.freepdfhouse.com", desc: "বাংলা গল্পের বইয়ের বিশাল ভাণ্ডার।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
+        { name: "Granthagar", url: "https://granthagar.com", desc: "বাংলার ধ্রুপদী সাহিত্যের সংগ্রহ।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
+        { name: "All Bangla Books", url: "https://allbanglabooks.com", desc: "হাজার হাজার বাংলা পিডিএফ বই।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
+        { name: "Sachalayatan", url: "https://www.sachalayatan.com", desc: "আধুনিক বাংলা সাহিত্যের পোর্টাল।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
+        { name: "Boier Haat", url: "https://boierhaat.com", desc: "বইয়ের বিশাল ভার্চুয়াল হাট।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
+        { name: "Shishu Sahitya", url: "https://shishusahitya.org", desc: "শিশুদের রূপকথা ও মজার বই।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
+        { name: "Porua", url: "https://porua.net", desc: "নতুন প্রজন্মের পাঠকদের সাইট।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
+        { name: "Bangla Ebook", url: "https://banglaebook.com", desc: "ডিজিটাল বাংলা ই-বুক সেন্টার।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
+        { name: "Shei Boi", url: "https://sheiboi.com", desc: "বাংলা ই-বুক পড়ার অ্যাপ ও সাইট।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
+        { name: "Dhumketu", url: "https://dhumketu.org", desc: "নজরুল সাহিত্যের বিশাল কালেকশন।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
+        { name: "Somoy Proka", url: "https://somoypublications.com", desc: "প্রকাশনী ভিত্তিক ই-বুক রিসোর্স।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
+        { name: "Abosar", url: "https://abosar.net", desc: "অবসর সময়ের শ্রেষ্ঠ পাঠ।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
+        { name: "Puthighar", url: "https://puthighar.com", desc: "ঐতিহ্যবাহী বাংলা বইয়ের সংগ্রহ।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
 
-        // ক্যাটাগরি ৪: একাডেমিক, বিজ্ঞান ও টেকনোলজি
-        { name: "BookBoon", url: "https://bookboon.com", desc: "ইঞ্জিনিয়ারিং, বিজনেস এবং আইটি বিষয়ের প্রফেশনাল টেক্সটবুক।", category: "৪. একাডেমিক, বিজ্ঞান ও মেডিকেল" },
-        { name: "IntechOpen", url: "https://www.intechopen.com/books", desc: "বিজ্ঞান এবং প্রযুক্তির ওপর ওপেন অ্যাক্সেস বইয়ের জন্য বিখ্যাত।", category: "৪. একাডেমিক, বিজ্ঞান ও মেডিকেল" },
-        { name: "DOAB", url: "https://www.doabooks.org", desc: "ডাইরেক্টরি অফ ওপেন এক্সেস বুকস - পিয়ার-রিভিউ করা একাডেমিক বই।", category: "৪. একাডেমিক, বিজ্ঞান ও মেডিকেল" },
-        { name: "Core.ac.uk", url: "https://core.ac.uk", desc: "বিশ্বের ওপেন অ্যাক্সেস রিসার্চ পেপার এবং জার্নালের বড় আর্কাইভ।", category: "৪. একাডেমিক, বিজ্ঞান ও মেডিকেল" },
-        { name: "NCBI Bookshelf", url: "https://www.ncbi.nlm.nih.gov/books/", desc: "মেডিকেল ও লাইফ সায়েন্সের প্রচুর ফ্রি বই ও রিপোর্ট।", category: "৪. একাডেমিক, বিজ্ঞান ও মেডিকেল" },
-        { name: "OAPEN", url: "https://oapen.org", desc: "হিউম্যানিটিজ এবং সোশ্যাল সায়েন্সের ওপেন অ্যাক্সেস বই।", category: "৪. একাডেমিক, বিজ্ঞান ও মেডিকেল" },
-        { name: "ScienceDirect (Open Access)", url: "https://www.sciencedirect.com", desc: "বিজ্ঞান ও প্রযুক্তির হাজারো ওপেন অ্যাক্সেস আর্টিকেল ও জার্নাল।", category: "৪. একাডেমিক, বিজ্ঞান ও মেডিকেল" },
+        // ৩. আন্তর্জাতিক ও আর্কাইভ (১৫টি)
+        { name: "Internet Archive", url: "https://archive.org", desc: "বিশ্বের বৃহত্তম ডিজিটাল লাইব্রেরি।", cat: "৩. আন্তর্জাতিক ও আর্কাইভ" },
+        { name: "Project Gutenberg", url: "https://www.gutenberg.org", desc: "৭০,০০০+ ফ্রি ইংরেজি ক্লাসিক ই-বুক।", cat: "৩. আন্তর্জাতিক ও আর্কাইভ" },
+        { name: "Open Library", url: "https://openlibrary.org", desc: "অনলাইনে বই পড়ার মুক্ত প্ল্যাটফর্ম।", cat: "৩. আন্তর্জাতিক ও আর্কাইভ" },
+        { name: "ManyBooks", url: "https://manybooks.net", desc: "৫০০০০ এর বেশি ফ্রি ই-বুক।", cat: "৩. আন্তর্জাতিক ও আর্কাইভ" },
+        { name: "Standard Ebooks", url: "https://standardebooks.org", desc: "খুবই মার্জিত মানের ফ্রি বই।", cat: "৩. আন্তর্জাতিক ও আর্কাইভ" },
+        { name: "Feedbooks", url: "https://www.feedbooks.com", desc: "পাবলিক ডোমেইন বই পড়ার সেরা সাইট।", cat: "৩. আন্তর্জাতিক ও আর্কাইভ" },
+        { name: "Loyal Books", url: "http://www.loyalbooks.com", desc: "ফ্রি অডিওবুক ও পিডিএফ সংগ্রহ।", cat: "৩. আন্তর্জাতিক ও আর্কাইভ" },
+        { name: "Planet eBook", url: "https://www.planetebook.com", desc: "সুন্দর ফরম্যাটের ক্লাসিক বই।", cat: "৩. আন্তর্জাতিক ও আর্কাইভ" },
+        { name: "Smashwords", url: "https://www.smashwords.com", desc: "নতুন লেখকদের হাজারো ফ্রি বই।", cat: "৩. আন্তর্জাতিক ও আর্কাইভ" },
+        { name: "Digilibraries", url: "https://digilibraries.com", desc: "বিশাল পরিসরে ডিজিটাল লাইব্রেরি।", cat: "৩. আন্তর্জাতিক ও আর্কাইভ" },
+        { name: "LibGen", url: "https://libgen.is", desc: "একাডেমিক ও সায়েন্টিফিক বইয়ের সমুদ্র।", cat: "৩. আন্তর্জাতিক ও আর্কাইভ" },
+        { name: "Z-Library Mirror", url: "https://singlelogin.re", desc: "বিশ্বের বৃহত্তম ই-বুক সংগ্রহশালা।", cat: "৩. আন্তর্জাতিক ও আর্কাইভ" },
+        { name: "PDF Drive", url: "https://www.pdfdrive.com", desc: "বিশাল পিডিএফ সার্চ ইঞ্জিন।", cat: "৩. আন্তর্জাতিক ও আর্কাইভ" },
+        { name: "Baen Books", url: "https://www.baen.com/allbooks/category/index/id/2012", desc: "সাইন্স ফিকশন ও ফ্যান্টাসি বই।", cat: "৩. আন্তর্জাতিক ও আর্কাইভ" },
+        { name: "Obooko", url: "https://www.obooko.com", desc: "নিরাপদ ও কপিরাইট মুক্ত বই।", cat: "৩. আন্তর্জাতিক ও আর্কাইভ" },
 
-        // ক্যাটাগরি ৫: প্রোগ্রামিং ও আইটি স্কিলস
-        { name: "GoalKicker", url: "https://goalkicker.com", desc: "প্রোগ্রামারদের জন্য সম্পূর্ণ ফ্রি ও দারুন সব নোটবুক।", category: "৫. প্রোগ্রামিং, কোডিং ও আইটি" },
-        { name: "FreeComputerBooks", url: "https://freecomputerbooks.com", desc: "কম্পিউটার সায়েন্স, প্রোগ্রামিং এবং গণিতের ফ্রি বইয়ের সাইট।", category: "৫. প্রোগ্রামিং, কোডিং ও আইটি" },
-        { name: "O'Reilly (Free)", url: "https://www.oreilly.com/programming/free/", desc: "প্রোগ্রামিং ও টেকনোলজির বিশ্বের সেরা পাবলিশারের ফ্রি বই।", category: "৫. প্রোগ্রামিং, কোডিং ও আইটি" },
-        { name: "Green Tea Press", url: "https://greenteapress.com/wp/", desc: "পাইথন এবং কম্পিউটার সায়েন্সের চমৎকার সব ফ্রি বই।", category: "৫. প্রোগ্রামিং, কোডিং ও আইটি" },
-        { name: "Programmer Books", url: "https://www.programmerbooks.com", desc: "সফটওয়্যার ইঞ্জিনিয়ারিং ও কোডিং এর পিডিএফ কালেকশন।", category: "৫. প্রোগ্রামিং, কোডিং ও আইটি" },
+        // ৪. একাডেমিক ও গবেষণা (১৫টি)
+        { name: "BookBoon", url: "https://bookboon.com", desc: "ইঞ্জিনিয়ারিং ও আইটি টেক্সটবুক।", cat: "৪. একাডেমিক ও গবেষণা" },
+        { name: "DOAB", url: "https://www.doabooks.org", desc: "ওপেন এক্সেস একাডেমিক লাইব্রেরি।", cat: "৪. একাডেমিক ও গবেষণা" },
+        { name: "Core.ac.uk", url: "https://core.ac.uk", desc: "বিশ্বের বড় রিসার্চ পেপার আর্কাইভ।", cat: "৪. একাডেমিক ও গবেষণা" },
+        { name: "IntechOpen", url: "https://www.intechopen.com", desc: "বিজ্ঞান ও প্রযুক্তির উন্মুক্ত বই।", cat: "৪. একাডেমিক ও গবেষণা" },
+        { name: "OAPEN", url: "https://oapen.org", desc: "মানবিক ও সমাজবিজ্ঞানের গবেষণা।", cat: "৪. একাডেমিক ও গবেষণা" },
+        { name: "NCBI Bookshelf", url: "https://www.ncbi.nlm.nih.gov/books/", desc: "মেডিকেল ও বায়োলজি ডাটাবেস।", cat: "৪. একাডেমিক ও গবেষণা" },
+        { name: "SpringerOpen", url: "https://www.springeropen.com", desc: "বিখ্যাত স্প্রিঙ্গার এর ফ্রি বই।", cat: "৪. একাডেমিক ও গবেষণা" },
+        { name: "Wiley Open", url: "https://onlinelibrary.wiley.com", desc: "উন্মুক্ত গবেষণা জার্নাল।", cat: "৪. একাডেমিক ও গবেষণা" },
+        { name: "Oxford Academic", url: "https://academic.oup.com", desc: "অক্সফোর্ডের ফ্রি রিসোর্স সেন্টার।", cat: "৪. একাডেমিক ও গবেষণা" },
+        { name: "MIT OCW", url: "https://ocw.mit.edu", desc: "এমআইটি কোর্সবুক ও স্টাডি নোটস।", cat: "৪. একাডেমিক ও গবেষণা" },
+        { name: "Coursera", url: "https://www.coursera.org", desc: "ফ্রি লার্নিং ম্যাটেরিয়াল।", cat: "৪. একাডেমিক ও গবেষণা" },
+        { name: "Khan Academy", url: "https://www.khanacademy.org", desc: "শিক্ষার্থীদের জন্য ডিজিটাল নোটস।", cat: "৪. একাডেমিক ও গবেষণা" },
+        { name: "PLOS ONE", url: "https://journals.plos.org", desc: "উন্মুক্ত বৈজ্ঞানিক প্রকাশনা।", cat: "৪. একাডেমিক ও গবেষণা" },
+        { name: "JSTOR Open", url: "https://www.jstor.org/open/", desc: "গবেষকদের জন্য ফ্রি রিসোর্স।", cat: "৪. একাডেমিক ও গবেষণা" },
+        { name: "Elsevier Open", url: "https://www.elsevier.com/open-access", desc: "সায়েন্স ডাইরেক্ট ই-বুকস।", cat: "৪. একাডেমিক ও গবেষণা" },
 
-        // ক্যাটাগরি ৬: শিশুতোষ ও কমিকস
-        { name: "StoryWeaver", url: "https://storyweaver.org.in", desc: "শিশুদের জন্য বহু ভাষায় লেখা মজার মজার গল্পের বই।", category: "৬. শিশুতোষ ও কমিকস" },
-        { name: "Free Kids Books", url: "https://freekidsbooks.org", desc: "বাচ্চাদের জন্য শিক্ষামূলক এবং গল্পের বইয়ের পিডিএফ ভাণ্ডার।", category: "৬. শিশুতোষ ও কমিকস" },
-        { name: "Comic Book Plus", url: "https://comicbookplus.com", desc: "পাবলিক ডোমেইনে থাকা গোল্ডেন এজের ফ্রি কমিক বইয়ের সাইট।", category: "৬. শিশুতোষ ও কমিকস" },
-        { name: "Digital Comic Museum", url: "https://digitalcomicmuseum.com", desc: "পুরনো দিনের হাজার হাজার ফ্রি কমিকস পড়ার লাইব্রেরি।", category: "৬. শিশুতোষ ও কমিকস" },
-        { name: "Children's Library", url: "http://www.childrenslibrary.org", desc: "বিশ্বের বিভিন্ন দেশের শিশুদের গল্পের বইয়ের আর্কাইভ।", category: "৬. শিশুতোষ ও কমিকস" },
+        // ৫. প্রযুক্তি ও প্রোগ্রামিং (১৫টি)
+        { name: "GoalKicker", url: "https://goalkicker.com", desc: "প্রোগ্রামারদের জন্য ফ্রি নোটবুক।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
+        { name: "FreeComputerBooks", url: "https://freecomputerbooks.com", desc: "কম্পিউটার সায়েন্স বইয়ের সংগ্রহ।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
+        { name: "Programmer Books", url: "https://www.programmerbooks.com", desc: "সফটওয়্যার ইঞ্জিনিয়ারিং বই।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
+        { name: "Green Tea Press", url: "https://greenteapress.com", desc: "পাইথন ও আইটি কিতাব।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
+        { name: "FreeTechBooks", url: "https://www.freetechbooks.com", desc: "ইঞ্জিনিয়ারিং ও টেক বই।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
+        { name: "O'Reilly Open", url: "https://www.oreilly.com/library/view/free-product-resources/", desc: "ও'রিলি এর ফ্রি রিসোর্স।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
+        { name: "GitBook", url: "https://www.gitbook.com", desc: "আধুনিক ডিজিটাল ডকুমেন্টেশন।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
+        { name: "Eloquent JS", url: "https://eloquentjavascript.net", desc: "জাভাস্ক্রিপ্ট শেখার সেরা বই।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
+        { name: "FreeCodeCamp", url: "https://www.freecodecamp.org/news/tag/books/", desc: "কোডিং শেখার ই-বুক।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
+        { name: "Microsoft Docs", url: "https://learn.microsoft.com", desc: "মাইক্রোসফট আইটি লাইব্রেরি।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
+        { name: "Java2s", url: "http://www.java2s.com", desc: "জাভা ও প্রোগ্রামিং রেফারেন্স।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
+        { name: "Linux Docs", url: "https://tldp.org", desc: "লিনাক্স ইউজার গাইড ও কিতাব।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
+        { name: "Hackershelf", url: "https://hackershelf.com", desc: "ডেভেলপারদের পছন্দের বই।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
+        { name: "Python Books", url: "https://pythonbooks.realtpython.com", desc: "পাইথনের স্পেশাল গাইড।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
+        { name: "DevFreeBooks", url: "https://devfreebooks.github.io", desc: "ডেভেলপারদের জন্য ফ্রি সংগ্রহ।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
 
-        // ক্যাটাগরি ৭: অডিওবুক (Audiobooks)
-        { name: "LibriVox", url: "https://librivox.org", desc: "পাবলিক ডোমেইন বইগুলোর ফ্রি অডিও ভার্সন।", category: "৭. অডিওবুক ও পডকাস্ট" },
-        { name: "Loyal Books", url: "https://www.loyalbooks.com", desc: "ফ্রি ই-বুক এবং অডিওবুক ডাউনলোডের চমৎকার সাইট।", category: "৭. অডিওবুক ও পডকাস্ট" },
-        { name: "Lit2Go", url: "https://etc.usf.edu/lit2go/", desc: "ক্লাসিক গল্প এবং কবিতার ফ্রি অডিওবুক কালেকশন।", category: "৭. অডিওবুক ও পডকাস্ট" },
-        { name: "Storynory", url: "https://www.storynory.com", desc: "বাচ্চাদের জন্য ফ্রি অডিও স্টোরি ও রূপকথার গল্প।", category: "৭. অডিওবুক ও পডকাস্ট" }
+        // ৬. শিশুতোষ ও অডিওবুক (১০টি)
+        { name: "StoryWeaver", url: "https://storyweaver.org.in", desc: "শিশুদের রঙিন গল্পের বই।", cat: "৬. শিশুতোষ ও অডিওবুক" },
+        { name: "LibriVox", url: "https://librivox.org", desc: "ফ্রি অডিওবুক সংগ্রহ।", cat: "৬. শিশুতোষ ও অডিওবুক" },
+        { name: "Comic Book Plus", url: "https://comicbookplus.com", desc: "বিンテージ কমিকস কালেকশন।", cat: "৬. শিশুতোষ ও অডিওবুক" },
+        { name: "Storynory", url: "https://www.storynory.com", desc: "বাচ্চাদের জন্য অডিও স্টোরি।", cat: "৬. শিশুতোষ ও অডিওবুক" },
+        { name: "Free Kids Books", url: "https://freekidsbooks.org", desc: "বাচ্চাদের ই-বুক রিসোর্স।", cat: "৬. শিশুতোষ ও অডিওবুক" },
+        { name: "Lit2Go", url: "https://etc.usf.edu/lit2go", desc: "সাহিত্যের অডিও কালেকশন।", cat: "৬. শিশুতোষ ও অডিওবুক" },
+        { name: "Open Culture", url: "https://www.openculture.com", desc: "অডিও ও পিডিএফের মেগা পোর্টাল।", cat: "৬. শিশুতোষ ও অডিওবুক" },
+        { name: "Children Library", url: "http://childrenslibrary.org", desc: "গ্লোবাল ডিজিটাল লাইব্রেরি।", cat: "৬. শিশুতোষ ও অডিওবুক" },
+        { name: "Oxford Owl", url: "https://www.oxfordowl.co.uk", desc: "শিশুদের পড়ালেখার গাইড।", cat: "৬. শিশুতোষ ও অডিওবুক" },
+        { name: "Scribl", url: "https://scribl.com", desc: "অডিওবুক ও ই-বুক পোর্টাল।", cat: "৬. শিশুতোষ ও অডিওবুক" }
     ];
 
-    // ওয়েবসাইট লিংক থেকে ডোমেইন বের করার ফাংশন (লোগোর জন্য)
-    function getDomain(url) {
-        let domain = (new URL(url));
-        return domain.hostname;
-    }
+    const portalBody = document.getElementById('portal-body');
+    const categories = [...new Set(sites.map(s => s.cat))];
 
-    const contentDiv = document.getElementById('portal-content');
-    
-    // ক্যাটাগরিগুলো আলাদা করা
-    const categories = [...new Set(sitesData.map(site => site.category))];
-
-    categories.forEach((category) => {
-        // ক্যাটাগরির টাইটেল তৈরি
+    categories.forEach(cat => {
         const section = document.createElement('div');
-        section.className = 'category-section';
-        section.innerHTML = `<h2 class="category-title">${category}</h2>`;
-        
-        // গ্রিড কন্টেইনার তৈরি
+        section.innerHTML = `<h2 class="cat-header">${cat}</h2>`;
         const grid = document.createElement('div');
         grid.className = 'grid';
 
-        // ওই ক্যাটাগরির সাইটগুলো ফিল্টার করে কার্ড তৈরি করা
-        const categorySites = sitesData.filter(site => site.category === category);
-        
-        categorySites.forEach(site => {
-            const domain = getDomain(site.url);
-            // icon.horse api ব্যবহার করে অটোমেটিক লোগো আনা হচ্ছে
-            const iconUrl = `https://icon.horse/icon/${domain}`;
-            
-            const card = document.createElement('div');
-            card.className = 'card';
-            card.innerHTML = `
-                <img src="${iconUrl}" alt="${site.name} Logo" class="site-icon" onerror="this.src='https://via.placeholder.com/70?text=Book'">
-                <h3>${site.name}</h3>
-                <p>${site.desc}</p>
-                <a href="${site.url}" target="_blank" rel="noopener noreferrer" class="visit-btn">ভিজিট করুন</a>
+        sites.filter(s => s.cat === cat).forEach(site => {
+            const domain = new URL(site.url).hostname;
+            grid.innerHTML += `
+                <div class="card">
+                    <img src="https://icon.horse/icon/${domain}" class="site-icon" alt="icon" onerror="this.src='https://via.placeholder.com/50?text=B'">
+                    <h3>${site.name}</h3>
+                    <p>${site.desc}</p>
+                    <a href="${site.url}" target="_blank" class="visit-btn">ভিজিট করুন</a>
+                </div>
             `;
-            grid.appendChild(card);
         });
-
         section.appendChild(grid);
-        contentDiv.appendChild(section);
+        portalBody.appendChild(section);
     });
 </script>
 
