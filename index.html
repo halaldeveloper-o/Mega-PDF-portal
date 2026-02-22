@@ -4,96 +4,209 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>মেগা পিডিএফ পোর্টাল - ইসলামিক তথ্য ওয়ার্ল্ড | ৯৯+ ফ্রি বইয়ের সাইট</title>
-    <meta name="description" content="ইসলামিক তথ্য ওয়ার্ল্ড-এর একটি বিশেষ আয়োজন। এখানে ৯৯টিরও বেশি ভেরিফাইড ফ্রি পিডিএফ ডাউনলোড সাইট রয়েছে।">
-    
+    <title>মেগা পিডিএফ পোর্টাল - ১১৫টি ভেরিফাইড বইয়ের সাইট | ইসলামিক তথ্য ওয়ার্ল্ড</title>
+    <meta name="title" content="মেগা পিডিএফ পোর্টাল - ১১৫টি ভেরিফাইড বইয়ের সাইট">
+    <meta name="description" content="ইসলামিক তথ্য ওয়ার্ল্ড-এর মেগা পিডিএফ পোর্টাল। এখানে ১১৫টি ভেরিফাইড সাইট থেকে ফ্রি ইসলামিক, একাডেমিক, প্রযুক্তি এবং বাংলা সাহিত্যের বই ডাউনলোড করুন। এটি বাংলাদেশের সবচেয়ে বড় পিডিএফ লিঙ্ক আর্কাইভ।">
+    <meta name="keywords" content="পিডিএফ ডাউনলোড, ইসলামিক বই, বাংলা ই-বুক, সরকারি বই, চাকরির প্রস্তুতি, Islamic Tottho World, মেগা পিডিএফ পোর্টাল">
+    <meta name="author" content="ইসলামিক তথ্য ওয়ার্ল্ড">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
-        :root { --primary: #1e3a8a; --secondary: #059669; --bg: #f3f4f6; --white: #ffffff; }
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
-        body { background-color: var(--bg); color: #1e293b; line-height: 1.6; }
+        :root { 
+            --primary: #1e3a8a; 
+            --secondary: #059669; 
+            --bg: #f3f4f6; 
+            --white: #ffffff; 
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --card-border: #e2e8f0;
+            --header-grad: linear-gradient(135deg, #1e3a8a, #3b82f6);
+        }
+
+        [data-theme="dark"] {
+            --primary: #60a5fa; 
+            --secondary: #10b981; 
+            --bg: #0f172a; 
+            --white: #1e293b; 
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --card-border: #334155;
+            --header-grad: linear-gradient(135deg, #0f172a, #1e3a8a);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; scroll-behavior: smooth; }
+        body { background-color: var(--bg); color: var(--text-main); transition: 0.3s; line-height: 1.6; }
         
         header { 
-            background: linear-gradient(135deg, var(--primary), #3b82f6); 
-            color: white; padding: 60px 20px; text-align: center; 
+            background: var(--header-grad); 
+            color: white; padding: 80px 20px; text-align: center; 
             clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+            position: relative;
         }
         header h1 { font-size: 2.5rem; margin-bottom: 15px; }
-        header .sub-text { font-size: 1.1rem; max-width: 800px; margin: 0 auto; opacity: 0.9; }
+        .header-desc { font-size: 1.1rem; max-width: 800px; margin: 0 auto; opacity: 0.9; }
 
-        .portal-stats { 
-            max-width: 1000px; margin: -40px auto 40px; background: var(--white); 
-            display: flex; justify-content: space-around; padding: 25px; 
-            border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+        /* Dark Mode Toggle */
+        .theme-toggle {
+            position: absolute; top: 20px; right: 20px;
+            background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3);
+            color: white; width: 45px; height: 45px; border-radius: 50%;
+            cursor: pointer; font-size: 1.2rem; transition: 0.3s;
+            display: flex; align-items: center; justify-content: center;
         }
-        .stat-box { text-align: center; flex: 1; border-right: 1px solid #eee; }
-        .stat-box:last-child { border-right: none; }
-        .stat-box h2 { color: var(--secondary); font-size: 2rem; }
-        .stat-box p { font-size: 0.85rem; font-weight: bold; color: #64748b; }
+        .theme-toggle:hover { background: white; color: var(--primary); }
 
         .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+        .portal-stats { 
+            display: flex; justify-content: space-around; background: var(--white);
+            padding: 25px; border-radius: 15px; margin: -50px auto 40px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1); position: relative; z-index: 10;
+        }
+        .stat-box { text-align: center; flex: 1; border-right: 1px solid var(--card-border); }
+        .stat-box:last-child { border-right: none; }
+        .stat-box h2 { color: var(--secondary); font-size: 2rem; }
+        .stat-box p { font-size: 0.9rem; color: var(--text-muted); font-weight: bold; }
+
+        .category-nav { margin-bottom: 40px; text-align: center; }
+        .nav-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+        .nav-item {
+            background: var(--white); color: var(--primary); border: 1px solid var(--card-border);
+            padding: 8px 15px; border-radius: 20px; text-decoration: none;
+            font-size: 0.85rem; font-weight: 600; transition: 0.3s;
+        }
+        .nav-item:hover { background: var(--primary); color: white; transform: translateY(-3px); }
+
         .cat-header { 
             background: var(--white); padding: 15px 20px; border-radius: 10px; 
-            border-left: 6px solid var(--secondary); margin: 40px 0 20px; 
-            font-size: 1.4rem; color: var(--primary); box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+            border-left: 6px solid var(--secondary); margin: 50px 0 20px; 
+            font-size: 1.3rem; color: var(--primary); display: flex; justify-content: space-between; align-items: center;
         }
+        .site-count { background: var(--secondary); color: white; padding: 2px 10px; border-radius: 20px; font-size: 0.9rem; }
 
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+        
         .card { 
             background: var(--white); border-radius: 12px; padding: 20px; text-align: center; 
-            border: 1px solid #e2e8f0; transition: 0.3s; display: flex; 
-            flex-direction: column; height: 100%; 
+            border: 1px solid var(--card-border); transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex; flex-direction: column; position: relative;
         }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); border-color: var(--secondary); }
-        .site-icon { width: 50px; height: 50px; margin: 0 auto 15px; border-radius: 50%; background: #f8fafc; }
-        .card h3 { color: var(--primary); margin-bottom: 10px; font-size: 1.1rem; }
-        .card p { font-size: 0.85rem; color: #64748b; margin-bottom: 15px; flex-grow: 1; }
-        .visit-btn { 
-            background: var(--secondary); color: white; text-decoration: none; 
-            padding: 10px; border-radius: 6px; font-weight: bold; font-size: 0.9rem; transition: 0.3s; 
+        .card:hover { 
+            transform: scale(1.03); 
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1), 0 0 15px rgba(5, 150, 105, 0.2); 
+            border-color: var(--secondary); 
         }
-        .visit-btn:hover { background: #047857; }
-
-        footer { background: #0f172a; color: white; text-align: center; padding: 50px 20px; margin-top: 60px; }
-        footer a { color: #3b82f6; text-decoration: none; font-weight: bold; }
         
+        .site-icon { width: 50px; height: 50px; margin: 0 auto 15px; border-radius: 10px; object-fit: contain; }
+        .card h3 { font-size: 1.1rem; margin-bottom: 10px; color: var(--text-main); }
+        .card p { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px; flex-grow: 1; }
+        
+        .btn-group { display: flex; gap: 8px; }
+        .visit-btn { flex: 4; background: var(--secondary); color: white; text-decoration: none; padding: 10px; border-radius: 6px; font-weight: bold; transition: 0.3s; }
+        .copy-btn { flex: 1; background: var(--bg); color: var(--text-muted); border: 1px solid var(--card-border); border-radius: 6px; cursor: pointer; transition: 0.3s; }
+        .copy-btn:hover { background: var(--primary); color: white; }
+
+        #backToTop {
+            position: fixed; bottom: 30px; right: 30px; width: 50px; height: 50px;
+            background: var(--header-grad); color: white; border: none; border-radius: 50%;
+            cursor: pointer; display: none; align-items: center; justify-content: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3); z-index: 1000;
+        }
+
+        footer { background: #0f172a; color: white; text-align: center; padding: 40px 20px; margin-top: 60px; }
+        footer a { color: #3b82f6; text-decoration: none; }
+
         @media (max-width: 768px) {
-            .portal-stats { flex-direction: column; gap: 15px; margin-top: -20px; }
-            .stat-box { border-right: none; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+            .portal-stats { flex-direction: column; gap: 15px; margin-top: -30px; }
+            header h1 { font-size: 1.8rem; }
+            .stat-box { border-right: none; border-bottom: 1px solid var(--card-border); padding-bottom: 10px; }
         }
     </style>
 </head>
 <body>
 
 <header>
+    <button class="theme-toggle" onclick="toggleTheme()" id="theme-icon">
+        <i class="fas fa-moon"></i>
+    </button>
     <h1>মেগা পিডিএফ পোর্টাল</h1>
-    <div class="sub-text">
-        <p><strong>ইসলামিক তথ্য ওয়ার্ল্ড</strong>-এর বিশেষ আয়োজন। জ্ঞান অন্বেষণকারীদের জন্য এখানে ৯৯টিরও বেশি ভেরিফাইড এবং কার্যকরী লিংক রয়েছে। আমাদের লক্ষ্য হলো আপনাকে সঠিক তথ্যের উৎসের সাথে পরিচয় করিয়ে দেওয়া।</p>
+    <div class="header-desc">
+        ইসলামিক তথ্য ওয়ার্ল্ড-এর বিশেষ আয়োজন। জ্ঞান অন্বেষণকারীদের জন্য এখানে ১১৫টি ভেরিফাইড এবং কার্যকরী লিংক রয়েছে। আমাদের লক্ষ্য আপনাকে সঠিক তথ্যের উৎসের সাথে পরিচয় করিয়ে দেওয়া।
     </div>
 </header>
 
 <div class="container">
     <div class="portal-stats">
-        <div class="stat-box"><h2>৯৯+</h2><p>টোটাল সাইট</p></div>
+        <div class="stat-box"><h2>১১৫</h2><p>টোটাল সাইট</p></div>
         <div class="stat-box"><h2>১০০%</h2><p>ফ্রি এক্সেস</p></div>
-        <div class="stat-box"><h2>আপডেট</h2><p id="currentYearStat"></p></div>
+        <div class="stat-box"><h2>২০২৬</h2><p>আপডেটেড ভার্সন</p></div>
     </div>
+
+    <nav class="category-nav">
+        <div id="category-menu" class="nav-grid"></div>
+    </nav>
+
     <div id="portal-body"></div>
 </div>
 
+<button id="backToTop" onclick="window.scrollTo({top:0, behavior:'smooth'})"><i class="fas fa-arrow-up"></i></button>
+
 <footer>
-    <p>&copy; <span id="year"></span> মেগা পিডিএফ পোর্টাল | সর্বস্বত্ব সংরক্ষিত</p>
-    <p style="margin-top: 10px;">একটি <a href="https://islamictotthoworld.blogspot.com" target="_blank">ইসলামিক তথ্য ওয়ার্ল্ড</a>-এর বিশেষ উদ্যোগ</p>
+    <p>&copy; 2026 মেগা পিডিএফ পোর্টাল</p>
+    <p>একটি <a href="https://islamictotthoworld.blogspot.com" target="_blank">ইসলামিক তথ্য ওয়ার্ল্ড</a>-এর বিশেষ উদ্যোগ</p>
 </footer>
 
 <script>
-    // অটোমেটিক বছর আপডেট করার ফাংশন
-    const d = new Date();
-    let year = d.getFullYear();
-    document.getElementById("year").innerHTML = year;
-    document.getElementById("currentYearStat").innerHTML = year + " ভার্সন";
+    // --- 1. Theme Toggle Logic ---
+    function toggleTheme() {
+        const body = document.body;
+        const icon = document.querySelector('#theme-icon i');
+        if (body.getAttribute('data-theme') === 'dark') {
+            body.removeAttribute('data-theme');
+            icon.className = 'fas fa-moon';
+            localStorage.setItem('theme', 'light');
+        } else {
+            body.setAttribute('data-theme', 'dark');
+            icon.className = 'fas fa-sun';
+            localStorage.setItem('theme', 'dark');
+        }
+    }
+
+    // Load saved theme
+    if (localStorage.getItem('theme') === 'dark') {
+        document.body.setAttribute('data-theme', 'dark');
+        document.querySelector('#theme-icon i').className = 'fas fa-sun';
+    }
+
+    // --- 2. Copy Function ---
+    function copyUrl(url, btn) {
+        navigator.clipboard.writeText(url);
+        const originalHtml = btn.innerHTML;
+        btn.innerHTML = '<i class="fas fa-check"></i>';
+        btn.style.color = '#10b981';
+        setTimeout(() => {
+            btn.innerHTML = originalHtml;
+            btn.style.color = '';
+        }, 2000);
+    }
+
+    // --- 3. Data & Rendering ---
+    const categoryIcons = {
+        "১. ইসলামিক ও ধর্মীয় গবেষণা": "🕌",
+        "২. বাংলা সাহিত্য ও ক্ল্যাসিক": "📚",
+        "৩. আন্তর্জাতিক আর্কাইভ ও লাইব্রেরি": "🌍",
+        "৪. একাডেমিক ও গবেষণা": "🎓",
+        "৫. প্রযুক্তি ও প্রোগ্রামিং": "💻",
+        "৬. শিশুতোষ ও অডিওবুক": "🎧",
+        "৭. বাংলাদেশি ই-বুক ও সরকারি আর্কাইভ": "🇧🇩",
+        "৮. বাংলাদেশি নিউজ ও ম্যাগাজিন আর্কাইভ": "📰",
+        "৯. চাকরি ও ক্যারিয়ার গাইড": "💼"
+    };
 
     const sites = [
-        // ১. ইসলামিক ও ধর্মীয় গবেষণা (২৫টি)
+        // ১. ইসলামিক (২৫টি)
         { name: "Quraner Alo", url: "https://www.quraneralo.com", desc: "কুরআন ও সুন্নাহর বিশাল আর্কাইভ।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
         { name: "Hadith BD", url: "https://hadithbd.com", desc: "সব হাদিস কিতাব অনলাইনে পড়ার সেরা সাইট।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
         { name: "IslamHouse", url: "https://islamhouse.com/bn", desc: "বিশ্বের বৃহত্তম বহুভাষিক ইসলামিক লাইব্রেরি।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
@@ -102,12 +215,12 @@
         { name: "Kalamullah", url: "https://www.kalamullah.com", desc: "ইংরেজি ভাষায় ইসলামিক বইয়ের বড় উৎস।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
         { name: "AhleHaqq", url: "https://www.ahlehaqmedia.com", desc: "দেওবন্দী ওলামাদের কিতাব ও ফতোয়া।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
         { name: "Wajibad", url: "https://wajibad.com", desc: "ইসলামিক বই ও মাসআলা-মাসায়েল।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
-        { name: "E-Islam", url: "https://e-islam.net", desc: "বাংলা ইসলামিক ই-বুকের নির্ভরযোগ্য পোর্টাল।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
+        { name: "E-Islam", url: "https://e-islam.net", desc: "বাংলা ইসলামিক ই-বুকের পোর্টাল।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
         { name: "Fatwa Library", url: "https://fatwalibrary.com", desc: "প্রয়োজনীয় ফতোয়া ও রেফারেন্স কিতাব।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
         { name: "Sunni Library", url: "https://sunnilibrary.com", desc: "সুন্নি আকিদা ও চিন্তাধারার বই।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
         { name: "Islamic Bookshelf", url: "https://islamicbookshelf.com", desc: "ডিজিটাল ইসলামিক বুকশেলফ।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
         { name: "Quranic Thoughts", url: "https://quranicthoughts.com", desc: "কুরআনিক গবেষণার আন্তর্জাতিক সাইট।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
-        { name: "Dawah Books", url: "https://dawahbooks.com", desc: "দাওয়াহ ও তাবলীগী পিডিএফ কালেকশন।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
+        { name: "Dawah Books", url: "https://dawahbooks.com", desc: "দাওয়াহ ও তাবলীগী পিডিএফ।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
         { name: "Sirat.net", url: "https://siraat.net", desc: "সীরাতুন্নবী (সা.) ও সাহাবী জীবনী।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
         { name: "Madina Library", url: "https://madinalibrary.org", desc: "মদিনা থেকে প্রকাশিত কিতাবসমূহ।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
         { name: "Islamic Academy", url: "https://islamicacademy.org", desc: "মৌলিক ইসলামিক শিক্ষা ও কিতাব।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
@@ -116,19 +229,19 @@
         { name: "Azhar Archive", url: "http://www.azhar.eg", desc: "আল-আযহারের গবেষণা ও প্রকাশনা।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
         { name: "IRF Net", url: "https://irf.net", desc: "তুলনামূলক ধর্মতত্ত্বের বই।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
         { name: "Bayan ul Quran", url: "https://bayan-ul-quran.com", desc: "তাফসির ও গভীর কুরআনিক জ্ঞান।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
-        { name: "Maktaba Shamila", url: "https://shamela.ws", desc: "আরবী কিতাব আর্কাইভ (গবেষকদের জন্য)।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
-        { name: "Islamic Relief", url: "https://www.islamic-relief.org", desc: "ইসলামিক জীবনদর্শন ও সেবামূলক বই।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
-        { name: "Halal Foundation", url: "https://halalfoundation.org", desc: "হালাল-হারাম ও ইসলামিক অর্থনীতি।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
+        { name: "Maktaba Shamila", url: "https://shamela.ws", desc: "আরবী কিতাব আর্কাইভ।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
+        { name: "Islamic Relief", url: "https://www.islamic-relief.org", desc: "ইসলামিক জীবনদর্শন ও বই।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
+        { name: "Halal Foundation", url: "https://halalfoundation.org", desc: "হালাল-হারাম ও অর্থনীতি।", cat: "১. ইসলামিক ও ধর্মীয় গবেষণা" },
 
         // ২. বাংলা সাহিত্য (২০টি)
-        { name: "eBangla Library", url: "https://www.ebanglalibrary.com", desc: "বাংলা সাহিত্যের বৃহত্তম অনলাইন আর্কাইভ।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
+        { name: "eBangla Library", url: "https://www.ebanglalibrary.com", desc: "বাংলা সাহিত্যের বৃহত্তম আর্কাইভ।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
         { name: "BDeBooks", url: "https://bdebooks.com", desc: "সব জনপ্রিয় বাংলা লেখকের বই।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
         { name: "Amar Books", url: "https://www.amarbooks.org", desc: "দুষ্প্রাপ্য ও পুরনো বাংলা বই।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
         { name: "Bengali PDF", url: "https://www.bengalipdf.com", desc: "সহজে বই ডাউনলোডের মাধ্যম।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
         { name: "Rabindranath.in", url: "https://rabindranath.in", desc: "রবীন্দ্রনাথের পূর্ণাঙ্গ রচনাবলী।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
         { name: "Boi Poka", url: "https://boipoka.com", desc: "বইপোকাদের পছন্দের বাংলা ই-বুক।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
         { name: "Bangla Book", url: "https://banglabook.org", desc: "সেরা সব ঔপন্যাসিকের বই।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
-        { name: "Free PDF House", url: "https://www.freepdfhouse.com", desc: "বাংলা গল্পের বইয়ের বিশাল ভাণ্ডার।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
+        { name: "Free PDF House", url: "https://www.freepdfhouse.com", desc: "বাংলা গল্পের বইয়ের ভাণ্ডার।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
         { name: "Granthagar", url: "https://granthagar.com", desc: "বাংলার ধ্রুপদী সাহিত্যের সংগ্রহ।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
         { name: "All Bangla Books", url: "https://allbanglabooks.com", desc: "হাজার হাজার বাংলা পিডিএফ বই।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
         { name: "Sachalayatan", url: "https://www.sachalayatan.com", desc: "আধুনিক বাংলা সাহিত্যের পোর্টাল।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
@@ -138,97 +251,149 @@
         { name: "Bangla Ebook", url: "https://banglaebook.com", desc: "ডিজিটাল বাংলা ই-বুক সেন্টার।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
         { name: "Shei Boi", url: "https://sheiboi.com", desc: "বাংলা ই-বুক পড়ার অ্যাপ ও সাইট।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
         { name: "Dhumketu", url: "https://dhumketu.org", desc: "নজরুল সাহিত্যের বিশাল কালেকশন।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
-        { name: "Somoy Proka", url: "https://somoypublications.com", desc: "প্রকাশনী ভিত্তিক ই-বুক রিসোর্স।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
+        { name: "Somoy Proka", url: "https://somoypublications.com", desc: "প্রকাশনী ভিত্তিক ই-বুক।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
         { name: "Abosar", url: "https://abosar.net", desc: "অবসর সময়ের শ্রেষ্ঠ পাঠ।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
         { name: "Puthighar", url: "https://puthighar.com", desc: "ঐতিহ্যবাহী বাংলা বইয়ের সংগ্রহ।", cat: "২. বাংলা সাহিত্য ও ক্ল্যাসিক" },
 
-        // ৩. আন্তর্জাতিক ও আর্কাইভ (১৫টি)
-        { name: "Internet Archive", url: "https://archive.org", desc: "বিশ্বের বৃহত্তম ডিজিটাল লাইব্রেরি।", cat: "৩. আন্তর্জাতিক ও আর্কাইভ" },
-        { name: "Project Gutenberg", url: "https://www.gutenberg.org", desc: "৭০,০০০+ ফ্রি ইংরেজি ক্লাসিক ই-বুক।", cat: "৩. আন্তর্জাতিক ও আর্কাইভ" },
-        { name: "Open Library", url: "https://openlibrary.org", desc: "অনলাইনে বই পড়ার মুক্ত প্ল্যাটফর্ম।", cat: "৩. আন্তর্জাতিক ও আর্কাইভ" },
-        { name: "ManyBooks", url: "https://manybooks.net", desc: "৫০০০০ এর বেশি ফ্রি ই-বুক।", cat: "৩. আন্তর্জাতিক ও আর্কাইভ" },
-        { name: "Standard Ebooks", url: "https://standardebooks.org", desc: "খুবই মার্জিত মানের ফ্রি বই।", cat: "৩. আন্তর্জাতিক ও আর্কাইভ" },
-        { name: "Feedbooks", url: "https://www.feedbooks.com", desc: "পাবলিক ডোমেইন বই পড়ার সেরা সাইট।", cat: "৩. আন্তর্জাতিক ও আর্কাইভ" },
-        { name: "Loyal Books", url: "http://www.loyalbooks.com", desc: "ফ্রি অডিওবুক ও পিডিএফ সংগ্রহ।", cat: "৩. আন্তর্জাতিক ও আর্কাইভ" },
-        { name: "Planet eBook", url: "https://www.planetebook.com", desc: "সুন্দর ফরম্যাটের ক্লাসিক বই।", cat: "৩. আন্তর্জাতিক ও আর্কাইভ" },
-        { name: "Smashwords", url: "https://www.smashwords.com", desc: "নতুন লেখকদের হাজারো ফ্রি বই।", cat: "৩. আন্তর্জাতিক ও আর্কাইভ" },
-        { name: "Digilibraries", url: "https://digilibraries.com", desc: "বিশাল পরিসরে ডিজিটাল লাইব্রেরি।", cat: "৩. আন্তর্জাতিক ও আর্কাইভ" },
-        { name: "LibGen", url: "https://libgen.is", desc: "একাডেমিক ও সায়েন্টিফিক বইয়ের সমুদ্র।", cat: "৩. আন্তর্জাতিক ও আর্কাইভ" },
-        { name: "Z-Library Mirror", url: "https://singlelogin.re", desc: "বিশ্বের বৃহত্তম ই-বুক সংগ্রহশালা।", cat: "৩. আন্তর্জাতিক ও আর্কাইভ" },
-        { name: "PDF Drive", url: "https://www.pdfdrive.com", desc: "বিশাল পিডিএফ সার্চ ইঞ্জিন।", cat: "৩. আন্তর্জাতিক ও আর্কাইভ" },
-        { name: "Baen Books", url: "https://www.baen.com/allbooks/category/index/id/2012", desc: "সাইন্স ফিকশন ও ফ্যান্টাসি বই।", cat: "৩. আন্তর্জাতিক ও আর্কাইভ" },
-        { name: "Obooko", url: "https://www.obooko.com", desc: "নিরাপদ ও কপিরাইট মুক্ত বই।", cat: "৩. আন্তর্জাতিক ও আর্কাইভ" },
+        // ৩. আন্তর্জাতিক আর্কাইভ (১৫টি)
+        { name: "Internet Archive", url: "https://archive.org", desc: "বিশ্বের বৃহত্তম ডিজিটাল লাইব্রেরি।", cat: "৩. আন্তর্জাতিক আর্কাইভ ও লাইব্রেরি" },
+        { name: "Project Gutenberg", url: "https://www.gutenberg.org", desc: "৭০,০০০+ ফ্রি ইংরেজি ক্ল্যাসিক।", cat: "৩. আন্তর্জাতিক আর্কাইভ ও লাইব্রেরি" },
+        { name: "Open Library", url: "https://openlibrary.org", desc: "অনলাইনে বই পড়ার মুক্ত প্ল্যাটফর্ম।", cat: "৩. আন্তর্জাতিক আর্কাইভ ও লাইব্রেরি" },
+        { name: "ManyBooks", url: "https://manybooks.net", desc: "৫০,০০০ এর বেশি ফ্রি ই-বুক।", cat: "৩. আন্তর্জাতিক আর্কাইভ ও লাইব্রেরি" },
+        { name: "PDF Drive", url: "https://www.pdfdrive.com", desc: "সার্চ ইঞ্জিন ফর পিডিএফ বুকস।", cat: "৩. আন্তর্জাতিক আর্কাইভ ও লাইব্রেরি" },
+        { name: "Library Genesis", url: "http://libgen.rs", desc: "একাডেমিক বইয়ের বিশাল ভাণ্ডার।", cat: "৩. আন্তর্জাতিক আর্কাইভ ও লাইব্রেরি" },
+        { name: "Z-Library", url: "https://z-lib.org", desc: "বিশ্বের বড় ই-বুক লাইব্রেরি।", cat: "৩. আন্তর্জাতিক আর্কাইভ ও লাইব্রেরি" },
+        { name: "Free-Ebooks.net", url: "https://www.free-ebooks.net", desc: "বিভিন্ন ক্যাটাগরির ফ্রি বই।", cat: "৩. আন্তর্জাতিক আর্কাইভ ও লাইব্রেরি" },
+        { name: "Feedbooks", url: "https://www.feedbooks.com", desc: "পাবলিক ডোমেইন বই।", cat: "৩. আন্তর্জাতিক আর্কাইভ ও লাইব্রেরি" },
+        { name: "Baen Free Library", url: "https://www.baen.com", desc: "সায়েন্স ফিকশন ও ফ্যান্টাসি বই।", cat: "৩. আন্তর্জাতিক আর্কাইভ ও লাইব্রেরি" },
+        { name: "BookYards", url: "https://www.bookyards.com", desc: "অনলাইন ই-বুক রিসোর্স।", cat: "৩. আন্তর্জাতিক আর্কাইভ ও লাইব্রেরি" },
+        { name: "GetFreeEBooks", url: "https://www.getfreeebooks.com", desc: "সেরা সব ফ্রি বইয়ের সংগ্রহ।", cat: "৩. আন্তর্জাতিক আর্কাইভ ও লাইব্রেরি" },
+        { name: "Standard Ebooks", url: "https://standardebooks.org", desc: "প্রফেশনাল ফরম্যাট ই-বুক।", cat: "৩. আন্তর্জাতিক আর্কাইভ ও লাইব্রেরি" },
+        { name: "Loyal Books", url: "http://www.loyalbooks.com", desc: "ফ্রি অডিওবুক ও ই-বুক।", cat: "৩. আন্তর্জাতিক আর্কাইভ ও লাইব্রেরি" },
+        { name: "DigiLibraries", url: "https://digilibraries.com", desc: "ডিজিটাল লাইব্রেরি কালেকশন।", cat: "৩. আন্তর্জাতিক আর্কাইভ ও লাইব্রেরি" },
 
-        // ৪. একাডেমিক ও গবেষণা (১৫টি)
-        { name: "BookBoon", url: "https://bookboon.com", desc: "ইঞ্জিনিয়ারিং ও আইটি টেক্সটবুক।", cat: "৪. একাডেমিক ও গবেষণা" },
+        // ৪. একাডেমিক ও গবেষণা (১০টি)
         { name: "DOAB", url: "https://www.doabooks.org", desc: "ওপেন এক্সেস একাডেমিক লাইব্রেরি।", cat: "৪. একাডেমিক ও গবেষণা" },
-        { name: "Core.ac.uk", url: "https://core.ac.uk", desc: "বিশ্বের বড় রিসার্চ পেপার আর্কাইভ।", cat: "৪. একাডেমিক ও গবেষণা" },
-        { name: "IntechOpen", url: "https://www.intechopen.com", desc: "বিজ্ঞান ও প্রযুক্তির উন্মুক্ত বই।", cat: "৪. একাডেমিক ও গবেষণা" },
-        { name: "OAPEN", url: "https://oapen.org", desc: "মানবিক ও সমাজবিজ্ঞানের গবেষণা।", cat: "৪. একাডেমিক ও গবেষণা" },
-        { name: "NCBI Bookshelf", url: "https://www.ncbi.nlm.nih.gov/books/", desc: "মেডিকেল ও বায়োলজি ডাটাবেস।", cat: "৪. একাডেমিক ও গবেষণা" },
-        { name: "SpringerOpen", url: "https://www.springeropen.com", desc: "বিখ্যাত স্প্রিঙ্গার এর ফ্রি বই।", cat: "৪. একাডেমিক ও গবেষণা" },
-        { name: "Wiley Open", url: "https://onlinelibrary.wiley.com", desc: "উন্মুক্ত গবেষণা জার্নাল।", cat: "৪. একাডেমিক ও গবেষণা" },
-        { name: "Oxford Academic", url: "https://academic.oup.com", desc: "অক্সফোর্ডের ফ্রি রিসোর্স সেন্টার।", cat: "৪. একাডেমিক ও গবেষণা" },
-        { name: "MIT OCW", url: "https://ocw.mit.edu", desc: "এমআইটি কোর্সবুক ও স্টাডি নোটস।", cat: "৪. একাডেমিক ও গবেষণা" },
-        { name: "Coursera", url: "https://www.coursera.org", desc: "ফ্রি লার্নিং ম্যাটেরিয়াল।", cat: "৪. একাডেমিক ও গবেষণা" },
-        { name: "Khan Academy", url: "https://www.khanacademy.org", desc: "শিক্ষার্থীদের জন্য ডিজিটাল নোটস।", cat: "৪. একাডেমিক ও গবেষণা" },
-        { name: "PLOS ONE", url: "https://journals.plos.org", desc: "উন্মুক্ত বৈজ্ঞানিক প্রকাশনা।", cat: "৪. একাডেমিক ও গবেষণা" },
-        { name: "JSTOR Open", url: "https://www.jstor.org/open/", desc: "গবেষকদের জন্য ফ্রি রিসোর্স।", cat: "৪. একাডেমিক ও গবেষণা" },
-        { name: "Elsevier Open", url: "https://www.elsevier.com/open-access", desc: "সায়েন্স ডাইরেক্ট ই-বুকস।", cat: "৪. একাডেমিক ও গবেষণা" },
+        { name: "CORE", url: "https://core.ac.uk", desc: "বিশ্বের রিসার্চ পেপার আর্কাইভ।", cat: "৪. একাডেমিক ও গবেষণা" },
+        { name: "BookBoon", url: "https://bookboon.com", desc: "ইঞ্জিনিয়ারিং ও আইটি টেক্সটবুক।", cat: "৪. একাডেমিক ও গবেষণা" },
+        { name: "Directory of OA Journals", url: "https://doaj.org", desc: "গবেষণামূলক জার্নাল সাইট।", cat: "৪. একাডেমিক ও গবেষণা" },
+        { name: "ScienceDirect", url: "https://www.sciencedirect.com", desc: "বিজ্ঞান ও গবেষণা পত্র।", cat: "৪. একাডেমিক ও গবেষণা" },
+        { name: "SSRN", url: "https://www.ssrn.com", desc: "সোশ্যাল সায়েন্স রিসার্চ।", cat: "৪. একাডেমিক ও গবেষণা" },
+        { name: "ResearchGate", url: "https://www.researchgate.net", desc: "বিজ্ঞানীদের সোশ্যাল নেটওয়ার্ক।", cat: "৪. একাডেমিক ও গবেষণা" },
+        { name: "Academia.edu", url: "https://www.academia.edu", desc: "একাডেমিক পেপার শেয়ারিং।", cat: "৪. একাডেমিক ও গবেষণা" },
+        { name: "JSTOR", url: "https://www.jstor.org", desc: "ডিজিটাল জার্নাল লাইব্রেরি।", cat: "৪. একাডেমিক ও গবেষণা" },
+        { name: "ERIC", url: "https://eric.ed.gov", desc: "শিক্ষা বিষয়ক তথ্য কেন্দ্র।", cat: "৪. একাডেমিক ও গবেষণা" },
 
-        // ৫. প্রযুক্তি ও প্রোগ্রামিং (১৫টি)
+        // ৫. প্রযুক্তি ও প্রোগ্রামিং (১০টি)
         { name: "GoalKicker", url: "https://goalkicker.com", desc: "প্রোগ্রামারদের জন্য ফ্রি নোটবুক।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
-        { name: "FreeComputerBooks", url: "https://freecomputerbooks.com", desc: "কম্পিউটার সায়েন্স বইয়ের সংগ্রহ।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
-        { name: "Programmer Books", url: "https://www.programmerbooks.com", desc: "সফটওয়্যার ইঞ্জিনিয়ারিং বই।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
-        { name: "Green Tea Press", url: "https://greenteapress.com", desc: "পাইথন ও আইটি কিতাব।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
-        { name: "FreeTechBooks", url: "https://www.freetechbooks.com", desc: "ইঞ্জিনিয়ারিং ও টেক বই।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
-        { name: "O'Reilly Open", url: "https://www.oreilly.com/library/view/free-product-resources/", desc: "ও'রিলি এর ফ্রি রিসোর্স।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
-        { name: "GitBook", url: "https://www.gitbook.com", desc: "আধুনিক ডিজিটাল ডকুমেন্টেশন।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
-        { name: "Eloquent JS", url: "https://eloquentjavascript.net", desc: "জাভাস্ক্রিপ্ট শেখার সেরা বই।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
-        { name: "FreeCodeCamp", url: "https://www.freecodecamp.org/news/tag/books/", desc: "কোডিং শেখার ই-বুক।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
-        { name: "Microsoft Docs", url: "https://learn.microsoft.com", desc: "মাইক্রোসফট আইটি লাইব্রেরি।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
-        { name: "Java2s", url: "http://www.java2s.com", desc: "জাভা ও প্রোগ্রামিং রেফারেন্স।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
-        { name: "Linux Docs", url: "https://tldp.org", desc: "লিনাক্স ইউজার গাইড ও কিতাব।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
-        { name: "Hackershelf", url: "https://hackershelf.com", desc: "ডেভেলপারদের পছন্দের বই।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
-        { name: "Python Books", url: "https://pythonbooks.realtpython.com", desc: "পাইথনের স্পেশাল গাইড।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
-        { name: "DevFreeBooks", url: "https://devfreebooks.github.io", desc: "ডেভেলপারদের জন্য ফ্রি সংগ্রহ।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
+        { name: "FreeComputerBooks", url: "https://freecomputerbooks.com", desc: "কম্পিউটার সায়েন্স বই।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
+        { name: "GitHub Books", url: "https://github.com/EbookFoundation", desc: "ফ্রি প্রোগ্রামিং বইয়ের ভাণ্ডার।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
+        { name: "TechBooksForFree", url: "http://www.techbooksforfree.com", desc: "টেকনিক্যাল বইয়ের কালেকশন।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
+        { name: "Eloquent JavaScript", url: "https://eloquentjavascript.net", desc: "জাভাস্ক্রিপ্ট শেখার সেরা বই।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
+        { name: "Learn Python", url: "https://www.learnpython.org", desc: "পাইথন শেখার ই-বুক।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
+        { name: "W3Schools PDF", url: "https://www.w3schools.com", desc: "ওয়েব ডিজাইন টিউটোরিয়াল।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
+        { name: "MDN Web Docs", url: "https://developer.mozilla.org", desc: "ওয়েব ডেভেলপারদের মূল গাইড।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
+        { name: "TutorialsPoint", url: "https://www.tutorialspoint.com", desc: "সব টেকনোলজি টিউটোরিয়াল।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
+        { name: "StackOverflow Books", url: "https://stackoverflow.com", desc: "কমিউনিটি বেসড লার্নিং।", cat: "৫. প্রযুক্তি ও প্রোগ্রামিং" },
 
         // ৬. শিশুতোষ ও অডিওবুক (১০টি)
         { name: "StoryWeaver", url: "https://storyweaver.org.in", desc: "শিশুদের রঙিন গল্পের বই।", cat: "৬. শিশুতোষ ও অডিওবুক" },
         { name: "LibriVox", url: "https://librivox.org", desc: "ফ্রি অডিওবুক সংগ্রহ।", cat: "৬. শিশুতোষ ও অডিওবুক" },
-        { name: "Comic Book Plus", url: "https://comicbookplus.com", desc: "বিンテージ কমিকস কালেকশন।", cat: "৬. শিশুতোষ ও অডিওবুক" },
-        { name: "Storynory", url: "https://www.storynory.com", desc: "বাচ্চাদের জন্য অডিও স্টোরি।", cat: "৬. শিশুতোষ ও অডিওবুক" },
-        { name: "Free Kids Books", url: "https://freekidsbooks.org", desc: "বাচ্চাদের ই-বুক রিসোর্স।", cat: "৬. শিশুতোষ ও অডিওবুক" },
-        { name: "Lit2Go", url: "https://etc.usf.edu/lit2go", desc: "সাহিত্যের অডিও কালেকশন।", cat: "৬. শিশুতোষ ও অডিওবুক" },
-        { name: "Open Culture", url: "https://www.openculture.com", desc: "অডিও ও পিডিএফের মেগা পোর্টাল।", cat: "৬. শিশুতোষ ও অডিওবুক" },
-        { name: "Children Library", url: "http://childrenslibrary.org", desc: "গ্লোবাল ডিজিটাল লাইব্রেরি।", cat: "৬. শিশুতোষ ও অডিওবুক" },
-        { name: "Oxford Owl", url: "https://www.oxfordowl.co.uk", desc: "শিশুদের পড়ালেখার গাইড।", cat: "৬. শিশুতোষ ও অডিওবুক" },
-        { name: "Scribl", url: "https://scribl.com", desc: "অডিওবুক ও ই-বুক পোর্টাল।", cat: "৬. শিশুতোষ ও অডিওবুক" }
+        { name: "International Children's DL", url: "http://en.childrenslibrary.org", desc: "বিশ্বের শিশুদের লাইব্রেরি।", cat: "৬. শিশুতোষ ও অডিওবুক" },
+        { name: "MagicBlox", url: "https://magicblox.com", desc: "অনলাইন চিলড্রেন বুকস।", cat: "৬. শিশুতোষ ও অডিওবুক" },
+        { name: "FreeChildrensStories", url: "https://www.freechildrenstories.com", desc: "ছোটদের মজার গল্প।", cat: "৬. শিশুতোষ ও অডিওবুক" },
+        { name: "Oxford Owl", url: "https://www.oxfordowl.co.uk", desc: "লানিং টু রিড রিসোর্স।", cat: "৬. শিশুতোষ ও অডিওবুক" },
+        { name: "Storynory", url: "https://www.storynory.com", desc: "অডিও স্টোরি ফর কিডস।", cat: "৬. শিশুতোষ ও অডিওবুক" },
+        { name: "Audiobooks.com", url: "https://www.audiobooks.com", desc: "সেরা অডিওবুক কালেকশন।", cat: "৬. শিশুতোষ ও অডিওবুক" },
+        { name: "OpenCulture", url: "https://www.openculture.com", desc: "ফ্রি অডিওবুক ও কোর্স।", cat: "৬. শিশুতোষ ও অডিওবুক" },
+        { name: "LoyalBooks Audio", url: "http://www.loyalbooks.com/genre/Children", desc: "ছোটদের অডিও বই।", cat: "৬. শিশুতোষ ও অডিওবুক" },
+
+        // ৭. বাংলাদেশি ই-বুক ও সরকারি (১০টি)
+        { name: "NCTB", url: "http://www.nctb.gov.bd", desc: "জাতীয় পাঠ্যপুস্তক বোর্ডের সকল বই।", cat: "৭. বাংলাদেশি ই-বুক ও সরকারি আর্কাইভ" },
+        { name: "E-Pustaka", url: "http://www.ebook.gov.bd", desc: "সরকারি বিশাল ই-বুক লাইব্রেরি।", cat: "৭. বাংলাদেশি ই-বুক ও সরকারি আর্কাইভ" },
+        { name: "Bangladesh Archive", url: "http://www.nanl.gov.bd", desc: "জাতীয় আরকাইভস ও গ্রন্থাগার।", cat: "৭. বাংলাদেশি ই-বুক ও সরকারি আর্কাইভ" },
+        { name: "BD National Portal", url: "https://bangladesh.gov.bd", desc: "সরকারি তথ্য ও সেবা পোর্টাল।", cat: "৭. বাংলাদেশি ই-বুক ও সরকারি আর্কাইভ" },
+        { name: "Shikkhaportal", url: "https://www.shikkhaportal.gov.bd", desc: "ডিজিটাল কন্টেন্ট আর্কাইভ।", cat: "৭. বাংলাদেশি ই-বুক ও সরকারি আর্কাইভ" },
+        { name: "DPE", url: "http://www.dpe.gov.bd", desc: "প্রাথমিক শিক্ষা অধিদপ্তর।", cat: "৭. বাংলাদেশি ই-বুক ও সরকারি আর্কাইভ" },
+        { name: "DSHE", url: "http://www.dshe.gov.bd", desc: "মাধ্যমিক ও উচ্চশিক্ষা।", cat: "৭. বাংলাদেশি ই-বুক ও সরকারি আর্কাইভ" },
+        { name: "Banbeis", url: "http://www.banbeis.gov.bd", desc: "শিক্ষা পরিসংখ্যান ও তথ্য।", cat: "৭. বাংলাদেশি ই-বুক ও সরকারি আর্কাইভ" },
+        { name: "BMEB", url: "http://www.bmeb.gov.bd", desc: "মাদ্রাসা শিক্ষা বোর্ড।", cat: "৭. বাংলাদেশি ই-বুক ও সরকারি আর্কাইভ" },
+        { name: "MOPME", url: "https://mopme.gov.bd", desc: "গণশিক্ষা মন্ত্রণালয়।", cat: "৭. বাংলাদেশি ই-বুক ও সরকারি আর্কাইভ" },
+
+        // ৮. নিউজ ও ম্যাগাজিন আর্কাইভ (১০টি)
+        { name: "Prothom Alo Archive", url: "https://www.prothomalo.com/archive", desc: "প্রথম আলোর পুরনো সংবাদের আর্কাইভ।", cat: "৮. বাংলাদেশি নিউজ ও ম্যাগাজিন আর্কাইভ" },
+        { name: "Daily Star Archive", url: "https://www.thedailystar.net/archive", desc: "ইংরেজি সংবাদের বিশাল সংগ্রহ।", cat: "৮. বাংলাদেশি নিউজ ও ম্যাগাজিন আর্কাইভ" },
+        { name: "Ittefaq Archive", url: "https://www.ittefaq.com.bd", desc: "ঐতিহাসিক সংবাদের ভাণ্ডার।", cat: "৮. বাংলাদেশি নিউজ ও ম্যাগাজিন আর্কাইভ" },
+        { name: "Magzter", url: "https://www.magzter.com", desc: "বাংলাদেশি ম্যাগাজিন কালেকশন।", cat: "৮. বাংলাদেশি নিউজ ও ম্যাগাজিন আর্কাইভ" },
+        { name: "All Bangla News", url: "https://www.allbanglanewspapers.com", desc: "এক জায়গায় সকল সংবাদপত্র।", cat: "৮. বাংলাদেশি নিউজ ও ম্যাগাজিন আর্কাইভ" },
+        { name: "Jugantor", url: "https://www.jugantor.com", desc: "সংবাদ ও ম্যাগাজিন রিসোর্স।", cat: "৮. বাংলাদেশি নিউজ ও ম্যাগাজিন আর্কাইভ" },
+        { name: "Kaler Kantho", url: "https://www.kalerkantho.com", desc: "নিউজ আর্কাইভ ও পোর্টাল।", cat: "৮. বাংলাদেশি নিউজ ও ম্যাগাজিন আর্কাইভ" },
+        { name: "BDNews24", url: "https://bangla.bdnews24.com", desc: "সর্বশেষ বাংলা সংবাদ।", cat: "৮. বাংলাদেশি নিউজ ও ম্যাগাজিন আর্কাইভ" },
+        { name: "Independent News", url: "https://www.independent24.com", desc: "জাতীয় সংবাদের ডিজিটাল আর্কাইভ।", cat: "৮. বাংলাদেশি নিউজ ও ম্যাগাজিন আর্কাইভ" },
+        { name: "Samakal", url: "https://samakal.com", desc: "তথ্য ও সংবাদ আর্কাইভ।", cat: "৮. বাংলাদেশি নিউজ ও ম্যাগাজিন আর্কাইভ" },
+
+        // ৯. চাকরি ও ক্যারিয়ার গাইড (৫টি)
+        { name: "BDJobs Training", url: "https://www.bdjobstraining.com", desc: "ক্যারিয়ার গঠনের গাইড ও রিসোর্স।", cat: "৯. চাকরি ও ক্যারিয়ার গাইড" },
+        { name: "Jobs PDF BD", url: "https://www.jobstestbd.com", desc: "চাকরির পরীক্ষার সমাধান ও বই।", cat: "৯. চাকরি ও ক্যারিয়ার গাইড" },
+        { name: "Career BD", url: "https://careerbangladesh.com", desc: "বিসিএস ও ব্যাংক জব প্রস্তুতি।", cat: "৯. চাকরি ও ক্যারিয়ার গাইড" },
+        { name: "Studypress", url: "https://www.studypress.org", desc: "চাকরির প্রস্তুতির পোর্টাল।", cat: "৯. চাকরি ও ক্যারিয়ার গাইড" },
+        { name: "E-Career", url: "https://e-career.gov.bd", desc: "সরকারি ক্যারিয়ার গাইডেন্স।", cat: "৯. চাকরি ও ক্যারিয়ার গাইড" }
     ];
 
-    const portalBody = document.getElementById('portal-body');
-    const categories = [...new Set(sites.map(s => s.cat))];
+    function renderPortal() {
+        const portalBody = document.getElementById('portal-body');
+        const categoryMenu = document.getElementById('category-menu');
+        const uniqueCategories = [...new Set(sites.map(s => s.cat))].sort();
 
-    categories.forEach(cat => {
-        const section = document.createElement('div');
-        section.innerHTML = `<h2 class="cat-header">${cat}</h2>`;
-        const grid = document.createElement('div');
-        grid.className = 'grid';
-
-        sites.filter(s => s.cat === cat).forEach(site => {
-            const domain = new URL(site.url).hostname;
-            grid.innerHTML += `
-                <div class="card">
-                    <img src="https://icon.horse/icon/${domain}" class="site-icon" alt="icon" onerror="this.src='https://via.placeholder.com/50?text=B'">
-                    <h3>${site.name}</h3>
-                    <p>${site.desc}</p>
-                    <a href="${site.url}" target="_blank" class="visit-btn">ভিজিট করুন</a>
+        uniqueCategories.forEach((cat, idx) => {
+            const catId = `section-${idx}`;
+            const icon = categoryIcons[cat] || "📂";
+            const filteredSites = sites.filter(s => s.cat === cat);
+            
+            // Add Nav Link
+            categoryMenu.innerHTML += `<a href="#${catId}" class="nav-item">${icon} ${cat}</a>`;
+            
+            // Build Section
+            const section = document.createElement('section');
+            section.id = catId;
+            section.innerHTML = `
+                <div class="cat-header">
+                    <span>${icon} ${cat}</span>
+                    <span class="site-count">${filteredSites.length} টি সাইট</span>
                 </div>
+                <div class="grid"></div>
             `;
+            
+            const grid = section.querySelector('.grid');
+            filteredSites.forEach(site => {
+                const domain = new URL(site.url).hostname;
+                grid.innerHTML += `
+                    <div class="card">
+                        <img src="https://www.google.com/s2/favicons?sz=64&domain=${domain}" class="site-icon" alt="icon">
+                        <h3>${site.name}</h3>
+                        <p>${site.desc}</p>
+                        <div class="btn-group">
+                            <a href="${site.url}" target="_blank" class="visit-btn">ভিজিট</a>
+                            <button class="copy-btn" onclick="copyUrl('${site.url}', this)" title="লিংক কপি">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                `;
+            });
+            portalBody.appendChild(section);
         });
-        section.appendChild(grid);
-        portalBody.appendChild(section);
-    });
+    }
+
+    // Initialize
+    window.onload = renderPortal;
+
+    // Back to top visibility
+    window.onscroll = function() {
+        const btn = document.getElementById("backToTop");
+        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) btn.style.display = "flex";
+        else btn.style.display = "none";
+    };
 </script>
 
 </body>
